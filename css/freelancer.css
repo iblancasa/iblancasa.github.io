@@ -396,6 +396,10 @@ footer .footer-below {
     box-shadow: none;
 }
 
+.modal-backdrop{
+    background-color:none;
+}
+
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
@@ -420,7 +424,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .close-modal:hover {
-    opacity: .3;
+    opacity: .9;
 }
 
 .portfolio-modal .close-modal .lr {
