@@ -396,10 +396,6 @@ footer .footer-below {
     box-shadow: none;
 }
 
-.modal-backdrop{
-    background-color:none;
-}
-
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
@@ -424,7 +420,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .close-modal:hover {
-    opacity: .9;
+    opacity: .3;
 }
 
 .portfolio-modal .close-modal .lr {
@@ -446,4 +442,9 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
 }
