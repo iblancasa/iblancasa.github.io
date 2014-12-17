@@ -36,8 +36,8 @@ h6 {
     font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
+hr.barr2,
+hr.barr {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -46,9 +46,8 @@ hr.star-primary {
     text-align: center;
 }
 
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
+hr.barr2:after,
+hr.barr:after {
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -57,20 +56,41 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
-hr.star-light {
+#titulo:after{
+  content: "\f120";
+}
+#proyectosactuales:after{
+  content: "\f121";
+}
+
+#proyectosacabados:after{
+  content: "\f1c9";
+}
+
+#sobremi:after{
+  content: "\f007";
+}
+
+#contacto:after{
+  content: "\f0a7";
+}
+
+
+
+hr.barr2 {
     border-color: #fff;
 }
 
-hr.star-light:after {
+hr.barr2:after {
     color: #fff;
     background-color: #18bc9c;
 }
 
-hr.star-primary {
+hr.barr {
     border-color: #2c3e50;
 }
 
-hr.star-primary:after {
+hr.barr:after {
     color: #2c3e50;
     background-color: #fff;
 }
