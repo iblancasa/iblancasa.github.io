@@ -28,7 +28,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <link href="least/css/least.min.css" rel="stylesheet" />
 </head>
 
 <body id="page-top" class="index">
@@ -186,7 +186,106 @@
                 </div>
             </div>
         </div>
+
+
+        <section class="galleria">
+          <ul id="gallery">
+            <li id="fullPreview"></li>
+
+            <li>
+              <a href="img/galeria/1.jpg"></a>
+              <img data-original="img/galeria/1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+
+              <div class="overLayer"></div>
+              <div class="infoLayer">
+                <ul>
+                  <li>
+                    <h2>
+                      Ocean
+                    </h2>
+                  </li>
+                  <li>
+                    <p>
+                      View Picture
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="projectInfo">
+                <strong>
+                  Day, Month, Year:
+                </strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              </div>
+            </li>
+            <li>
+              <a href="img/galeria/1.jpg"></a>
+              <img data-original="img/galeria/1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+
+              <div class="overLayer"></div>
+              <div class="infoLayer">
+                <ul>
+                  <li>
+                    <h2>
+                      Ocean
+                    </h2>
+                  </li>
+                  <li>
+                    <p>
+                      View Picture
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="projectInfo">
+                <strong>
+                  Day, Month, Year:
+                </strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              </div>
+            </li>
+            <li>
+              <a href="img/galeria/1.jpg"></a>
+              <img data-original="img/galeria/1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+
+              <div class="overLayer"></div>
+              <div class="infoLayer">
+                <ul>
+                  <li>
+                    <h2>
+                      Ocean
+                    </h2>
+                  </li>
+                  <li>
+                    <p>
+                      View Picture
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="projectInfo">
+                <strong>
+                  Day, Month, Year:
+                </strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              </div>
+            </li>
+          </ul>
+        </section>
+
+
+
+
     </section>
+
+
+
+
+
+
+
+
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -417,13 +516,15 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
+    <script src="least/js/jquery.lazyload.min.js" defer="defer"></script>
+    <script src="least/js/least.min.js" defer="defer"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('#gallery').least();
+    });
+    </script>
 
 </body>
 
