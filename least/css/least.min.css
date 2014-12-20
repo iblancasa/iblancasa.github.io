@@ -54,7 +54,6 @@
           .galleria #fullPreview img,
           .galleria #fullPreview .fullCaption {
               max-width: 960px;
-              width: 100%;
               margin: 0 auto;
               display: block; }
               .galleria #fullPreview .fullCaption {
