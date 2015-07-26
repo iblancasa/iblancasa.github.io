@@ -62,6 +62,9 @@
                     <li class="page-scroll">
                         <a href="#contact">Contacto</a>
                     </li>
+                    <li class="page-scroll">
+                        <a href="http://blog.iblancasa.com/">Blog</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -116,13 +119,13 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#arduband" class="portfolio-link" data-toggle="modal">
+                    <a href="#github-data" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-folder-open  fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/arduband.png" class="img-responsive" alt="Arduband">
+                        <img src="img/portfolio/github-data.png" class="img-responsive" alt="GitHub - Data">
                     </a>
                 </div>
             </div>
@@ -145,6 +148,16 @@
                 </div>
                 <img src="img/portfolio/desafiotecnologico.png" class="img-responsive" alt="Desafío Tecnológico">
               </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#arduband" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-folder-open  fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/arduband.png" class="img-responsive" alt="Arduband">
+                </a>
             </div>
             <div class="col-sm-4 portfolio-item">
               <a href="#github" class="portfolio-link" data-toggle="modal">
@@ -182,6 +195,7 @@
                     <li>Diseño de interfaces "hombre-máquina"</li>
                     <li>Wearables</li>
                     <li>Desarrollo de servicios web</li>
+                    <li>IoT</li>
                   </ul>
                 </div>
             </div>
@@ -435,6 +449,9 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="portfolio-modal modal fade" id="realidadaumentada" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -458,7 +475,9 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="arduband" tabindex="-1" role="dialog" aria-hidden="true">
+
+
+    <div class="portfolio-modal modal fade" id="github-data" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -470,10 +489,28 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Arduband</h2>
+                            <h2>GitHub - Spanish Data</h2>
                             <hr class="barr">
-                            <img src="img/portfolio/arduband.png" class="img-responsive img-centered" alt="Arduband" width="50%">
-                            <p>Como Trabajo Fin de Grado, me encuentro desarrollando un sistema para la dirección de bandas de música (marcando, por ejemplo, el ritmo). Para ello estoy utilizando la tecnología <a href="http://es.wikipedia.org/wiki/ZigBee">Zigbee</a>. Próximamente más detalles</p>
+                            <img src="img/portfolio/github-data.png" class="img-responsive img-centered" alt="GitHub Data" width="50%">
+                            <p>A partir de los datos que Juan Julián Merelo (<a href="https://github.com/JJ/">@JJ</a>)
+                              extrae de la API de GitHub (y que almacena en
+                              <a href="https://github.com/JJ/top-github-users-data">este repositorio</a>), se ha creado
+                              este proyecto para analizar algunos datos de los desarrolladores españoles que utilizan GitHub
+                              (tal como qué lenguajes se utilizan más, qué provincias son más activas...).</p>
+                            <ul class="list-inline item-details">
+                              <li>
+                                <strong><a href="https://github.com/iblancasa/GitHub-DataProcessor-Spain">Procesador de datos</a>
+                                </strong>
+                              </li>
+                              <li>
+                                <strong><a href="https://github.com/iblancasa/GitHub-DataProcessed-Spain">Datos procesados</a>
+                                </strong>
+                              </li>
+                              <li>
+                                <strong><a href="http://spanish-data.iblancasa.com/">Web del proyecto</a>
+                                </strong>
+                              </li>
+                            </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                         </div>
                     </div>
@@ -481,6 +518,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!--Proyectos ya acabados-->
@@ -521,6 +559,43 @@
             </div>
         </div>
     </div>
+
+    <div class="portfolio-modal modal fade" id="arduband" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Arduband</h2>
+                            <hr class="barr">
+                            <img src="img/portfolio/arduband.png" class="img-responsive img-centered" alt="Arduband" width="50%">
+                            <p>Es un sistema para favorecer el acompasamiento de bandas de música marcando, mediante
+                              vibración, el mismo pulso a todos los músicos. </p>
+                              <p>En su versión inicial se ha desarrollado desplegando una red de sensores
+                               <a href="http://es.wikipedia.org/wiki/ZigBee">Zigbee</a> (con la implementación de la empresa Digi,
+                               modelo Series 2). Debido a los problemas que ofrece esta tecnología, se están buscando alternativas.
+                              </p>
+                              <ul class="list-inline item-details">
+                                  <li>
+                                      <strong><a href="https://github.com/iblancasa/ArduBand">Repositorio del proyecto</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="portfolio-modal modal fade" id="github" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
