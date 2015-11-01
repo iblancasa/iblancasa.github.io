@@ -71,6 +71,10 @@ hr.barr:after {
   content: "\f007";
 }
 
+#hackathones:after{
+  content: "\f126";
+}
+
 #contacto:after{
   content: "\f0a7";
 }
