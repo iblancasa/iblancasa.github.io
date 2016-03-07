@@ -209,6 +209,10 @@ section.success {
     background: #336699;
 }
 
+section.success a{
+  color:#fff !important;
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
