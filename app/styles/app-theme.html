@@ -176,6 +176,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     @apply(--paper-font-subhead);
   }
 
+
   section[data-route="about"] paper-material {
     @apply(--paper-font-body3);
     font-size: 110%;
@@ -192,10 +193,39 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
 
-
   section[data-route="about"] paper-material .subhead {
     @apply(--paper-font-subhead);
   }
+
+
+
+
+
+  section[data-route="eventos"] paper-material {
+    @apply(--paper-font-body3);
+    font-size: 110%;
+  }
+
+  section[data-route="eventos"] paper-material li{
+    margin-bottom: 2%;
+  }
+
+
+  section[data-route="eventos"] paper-material a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+
+  }
+
+  section[data-route="eventos"] paper-material p {
+    text-align: justify;
+  }
+
+
+  section[data-route="eventos"] paper-material .subhead {
+    @apply(--paper-font-subhead);
+  }
+
 
   #github i:hover{
     color:#000;
