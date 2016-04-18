@@ -155,6 +155,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     height: 900px;
   }
 
+
   section[data-route="home"] paper-material {
     @apply(--paper-font-body3);
     font-size: 110%;
@@ -165,9 +166,55 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     text-decoration: none;
   }
 
+  section[data-route="home"] paper-material p {
+    text-align: justify;
+  }
+
+
+
   section[data-route="home"] paper-material .subhead {
     @apply(--paper-font-subhead);
   }
+
+  section[data-route="about"] paper-material {
+    @apply(--paper-font-body3);
+    font-size: 110%;
+  }
+
+  section[data-route="about"] paper-material a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+
+  }
+
+  section[data-route="about"] paper-material p {
+    text-align: justify;
+  }
+
+
+
+  section[data-route="about"] paper-material .subhead {
+    @apply(--paper-font-subhead);
+  }
+
+  #github i:hover{
+    color:#000;
+  }
+  #twitter i:hover{
+    color:#55acee;
+  }
+  #linkedin i:hover{
+    color:#0077b5;
+  }
+  #youtube i:hover{
+    color:#e52d27;
+  }
+  #stackoverflow i:hover{
+    color:#fe7a15;
+  }
+
+
+
 
   paper-material {
     border-radius: 2px;
@@ -176,7 +223,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     width: calc(98.66% - 16px);
     margin: 16px auto;
     background: white;
+    text-decoration: none;
+    color: var(--menu-link-color);
+    font-family: 'Roboto', 'Noto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 14px;
   }
+
 
   #toast .toast-hide-button {
     color: #eeff41;
@@ -185,10 +239,27 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   section[tabindex="-1"]:focus { outline: none; }
 
+  #yo{
+    margin-bottom: 8%;
+    float: left;
+    margin-right: 30px;
+
+  }
+
+  #yoabout{
+    margin-bottom: 4%;
+    float: left;
+    margin-right: 30px;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+  }
   /* Breakpoints */
 
   /* Small */
   @media (max-width: 600px) {
+
+    #yo{
+      width: 100%;
+    }
 
     #drawer .paper-toolbar {
       margin-left: 16px;
@@ -260,7 +331,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   /* desktop-small-landscape */
   @media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) { }
   /* desktop-small */
-  @media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) { }
+  @media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) {
+    #yo{
+      width: 100%;
+    }
+  }
   /* desktop-medium-landscape */
   @media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) { }
   /* desktop-medium */
