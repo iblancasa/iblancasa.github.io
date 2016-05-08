@@ -19,6 +19,13 @@
     "test",
     "tests"
   ],
-  "dependencies":{
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "app-layout": "PolymerLabs/app-layout#^0.0.16",
+    "paper-tabs": "PolymerElements/paper-tabs#^1.5.0",
+    "iron-icons": "PolymerElements/iron-icons#^1.1.0",
+    "paper-item": "PolymerElements/paper-item#^1.1.0",
+    "paper-menu": "PolymerElements/paper-menu#^1.2.2",
+    "paper-styles": "PolymerElements/paper-styles#^1.1.4"
   }
 }
