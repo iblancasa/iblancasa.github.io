@@ -14,6 +14,7 @@
 <link rel="import" href="../../bower_components/paper-menu/paper-menu.html">
 <link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
 <link rel="import" href="../../bower_components/paper-styles/color.html">
+<link rel="import" href="../../bower_components/paper-styles/typography.html">
 <link rel="import" href="../../bower_components/neon-animation/neon-animated-pages.html">
 
 
@@ -57,6 +58,11 @@
         color: white;
         text-decoration: none;
       }
+
+      .titleApp{
+        @apply(--paper-font-title);
+        color: white;
+      }
     </style>
 
 
@@ -65,12 +71,10 @@
 
     <app-drawer-layout force-narrow>
 
-      <app-drawer id="drawer">
-
-        <app-toolbar></app-toolbar>
+      <app-drawer style="z-index:4;" id="drawer">
 
         <!--Móvil -->
-        <paper-menu selected="{{data.page}}" attr-for-selected="name">
+        <paper-menu  selected="{{data.page}}" attr-for-selected="name">
             <paper-item name="home">Inicio</paper-item>
             <paper-item name="about">Sobre mí</paper-item>
             <paper-item name="events">Eventos</paper-item>
@@ -83,10 +87,12 @@
 
           <app-toolbar>
             <paper-icon-button class="menu-button" icon="menu" drawer-toggle hidden$="{{wideLayout}}"></paper-icon-button>
+            <h1 class="titleApp">Israel Blancas - iblancasa</h1>
           </app-toolbar>
 
-          <app-toolbar class="tabs-bar" hidden$="{{!wideLayout}}">
+          <app-toolbar class="tabs-bar" style="height: 56px;padding: 0 8px;" hidden$="{{!wideLayout}}">
             <!-- Escritorio -->
+
             <paper-tabs selected="{{data.page}}" attr-for-selected="name" bottom-item>
                 <paper-tab name="home">
                     <a class="linkroute" href="#/home" data-route="inicio">Inicio</a>
@@ -98,6 +104,7 @@
                     <a class="linkroute" href="#/events" data-route="events">Eventos</a>
                 </paper-tab>
             </paper-tabs>
+
           </app-toolbar>
 
         </app-header>
@@ -106,7 +113,8 @@
     </app-drawer-layout>
 
     <iron-media-query query="min-width: 600px" query-matches="{{wideLayout}}"></iron-media-query>
-    <neon-animated-pages
+
+   <neon-animated-pages
                 selected="[[data.page]]"
                 attr-for-selected="data-route"
                 fallback-selection="404">
@@ -114,8 +122,6 @@
       <sobre-mi data-route="about"></sobre-mi>
       <events-page data-route="events"></events-page>
     </neon-animated-pages>
-
-
 
   </template>
 
