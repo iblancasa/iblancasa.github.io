@@ -1,0 +1,125 @@
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/paper-material/paper-material.html">
+<dom-module id="sobre-mi">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      paper-material{
+        width: 70%;
+        margin:0 auto;
+      }
+    </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+    <paper-material elevation="4" style="margin-top:20px;">
+        <img width="20%" id="yoabout" src="images/iblancasa.jpg">
+        <p>
+          Como ya he dicho en la página principal, mi nombre es Israel
+          Blancas y soy de Granada (España). Mi apodo es @iblancasa en todas las páginas
+          en las que me registro.
+        </p>
+        <p style="font-size:xx-large;">
+          <a href="https://github.com/iblancasa" id="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/iblancasa" id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/iblancasa" id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/user/iblancasa" id="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          <a href="http://stackoverflow.com/users/3372108/iblancasa" id="stackoverflow"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+        </p>
+
+        <h2><iron-icon icon="social:school"></iron-icon> Formación</h2>
+        <ul style="list-style-type: none">
+          <li><strong>2010-2015</strong>: Grado en Ingeniería Informática - <a href="http://www.ugr.es/">Universidad de Granada</a></li>
+        </ul>
+
+        <h3>Otros cursos</h3>
+        <ul style="list-style-type: none">
+          <li><strong>Marzo 2016 - Abril 2016</strong> - Ciencia de datos: un enfoque práctico en la época del big data - <a href="https://www.ugr.es/~cm/">Centro Mediterráneo (Universidad de Granada)</a></li>
+        </ul>
+        <br/>
+
+        <h2><iron-icon icon="icons:work"></iron-icon> Experiencia</h2>
+        <ul style="list-style-type: none">
+          <li><strong>2015-2015</strong>: Becario de "Iniciación a la Investigación" por el Plan Propio de la Universidad de Granada con el grupo de investigación Geneura</li>
+        </ul>
+        <br/>
+
+        <h2><iron-icon icon="editor:mode-edit"></iron-icon> Publicaciones</h2>
+        <ul style="list-style-type: none">
+          <li style="margin-bottom:2.5%;"><strong>2016</strong>:
+            <ul>
+              <li><a href="http://link.springer.com/chapter/10.1007%2F978-3-319-31153-1_3">Benchmarking Languages for
+                Evolutionary Algorithms. EvoApplications (2) 2016: 27-41</a></li>
+            </ul>
+          </li>
+          <li  style="margin-bottom:2.5%;"><strong>2015</strong>:
+            <ul>
+              <li><a href="http://arxiv.org/abs/1501.06857">Measuring the local GitHub developer
+                community. CoRR abs/1501.06857 (2015)</a></li>
+              <li><a href="http://arxiv.org/abs/1511.01088">There is no fast lunch: an examination of the running speed of
+                evolutionary algorithms in several languages. CoRR abs/1511.01088 (2015)</a>
+            </ul>
+          </li>
+        </ul>
+        <br/>
+
+        <h2><i class="fa fa-trophy" aria-hidden="true"></i> Premios</h2>
+        <ul style="list-style-type: none; margin-bottom:7%;">
+          <li style="margin-bottom:2%;"><strong>"IV Desafío Tecnológico (Reto RTI)" (2014-2015)</strong> - Primer premio - <i style="font-size:small">Organizado por la <a href="http://etsiit.ugr.es/">ETSIIT de la UGR</a></i> <br/>
+            Consistía en el desarrollo y
+            prototipado de un sistema de vídeo en tiempo real, distribuido y
+            multiagente utilizando la tecnología <a href="https://www.rti.com/products/dds/">"RTI Connext DDS"</a>. En nuestro
+            caso, creamos un sistema que permitía que los padres de los alumnos
+            de un centro educativo pudieran ver a sus hijos desde casa.
+          </li>
+          <li style="margin-bottom:2%;"><strong>Hackathón Sinfonier (2016)</strong> - Primer premio - <i style="font-size:small">Organizado por <a href="https://www.elevenpaths.com/">ElevenPaths</a></i><br/>
+            Creación de módulos y topologías en la plataforma <a href="http://sinfonier-project.net/">"Sinfonier"</a>. Desarrollé cuatro
+            módulos (todos ellos validados) para la extracción de datos de Linkedin y Archive.org
+            y diseñé una topología para enviar ofertas de
+            trabajo a usuarios de GitHub en función de sus habilidades.
+          </li>
+          <li ><strong>Campus inWatch (2015)</strong> - Segundo premio - <i style="font-size:small">Organizado por Global InDevices</i><br/>
+            Desarrollo de una aplicación para el smartwatch "Android" "inWatch Z". Mi grupo
+            creó un prototipo de una aplicación para ayudar a dejar de fumar.
+          </li>
+        </ul>
+
+        <h2><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Más cosas sobre mí<h2>
+          <h3>Asociaciones de las que soy miembro</h3>
+          <a href="http://gdggranada.com/"><img src="images/gdggranada.png" width="300px"></a>
+          <p><small>Google Devevelopers Group Granada</small> es una asociación sin ánimo de lucro
+          de desarrolladores interesados en tecnología, sobre todo la que se encuentra estrechamente
+          relacionada con Google. Nos encargamos de organizar eventos para crear comunidad y difundir
+          conocimiento.</p>
+          <p>Soy miembro desde noviembre de 2015.</p>
+
+          <a href="http://ieee-ugr.org/"><img src="images/ieee.png" width="150px"></a>
+          <p><smal>Institute of Electrical and Electronics Engineers (rama estudiantil de la Universidad de Granada)</small>.
+          Un grupo de gente realmente interesado en todo tipo de temas afines a la electrónica, rama de la
+          conocida asociación mundial.</p>
+          <p>En este año estamos organizando el CNR (Congreso Nacional de Ramas) 2017 (que será en Granada).</p>
+          <p>Miembro desde septiembre de 2015.</p>
+
+          <h3>Algunas aficciones</h3>
+          <ul>
+            <li>Programar (cómo no)</li>
+            <li>Internet de las Cosas</li>
+            <li>Cloud</li>
+            <li>Escuchar música</li>
+            <li>Salir con amigos</li>
+            <li>Jugar al futbolín</li>
+          </ul>
+    </paper-material>
+
+
+  </template>
+  <script>
+    Polymer({
+      is: 'sobre-mi'
+    });
+  </script>
+</dom-module>
