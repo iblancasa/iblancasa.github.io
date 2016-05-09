@@ -2,27 +2,75 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
 <link rel="import" href="../../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../../bower_components/iron-icons/social-icons.html">
+<link rel="import" href="../../bower_components/iron-icons/editor-icons.html">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
 <dom-module id="sobre-mi">
   <template>
     <style>
       :host {
         display: block;
+        @apply(--paper-font-common-base);
       }
 
-      paper-material{
+      p{
+        text-align: justify;
+      }
+
+      .father{
         width: 70%;
         margin:0 auto;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        padding-bottom: 3%;
       }
-    </style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 
-    <paper-material elevation="4" style="margin-top:20px;">
-        <img width="20%" id="yoabout" src="images/iblancasa.jpg">
-        <p>
+      .father p{
+        padding-right: 4%;
+        padding-left: 7%;
+      }
+
+      .father h2{
+        padding-left: 3%;
+      }
+
+      #yoabout{
+        width: 25%;
+        float:left;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        margin-right: 4%;
+        margin-left: 4%;
+      }
+
+      a{
+        text-decoration: none;
+        color: var(--paper-grey-800);
+      }
+
+      a:hover{
+        color: var(--paper-grey-600);
+      }
+
+      ul{
+        margin-right: 4%;
+        text-align: justify;
+      }
+
+    </style>
+
+
+    <paper-material class="father" elevation="4" >
+        <img id="yoabout" src="images/iblancasa.jpg">
+        <p style="padding-top:3%;">
           Como ya he dicho en la página principal, mi nombre es Israel
           Blancas y soy de Granada (España). Mi apodo es @iblancasa en todas las páginas
           en las que me registro.
         </p>
+
+
+
         <p style="font-size:xx-large;">
           <a href="https://github.com/iblancasa" id="github"><i class="fa fa-github" aria-hidden="true"></i></a>
           <a href="https://twitter.com/iblancasa" id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -53,15 +101,15 @@
           <li style="margin-bottom:2.5%;"><strong>2016</strong>:
             <ul>
               <li><a href="http://link.springer.com/chapter/10.1007%2F978-3-319-31153-1_3">Benchmarking Languages for
-                Evolutionary Algorithms. EvoApplications (2) 2016: 27-41</a></li>
+                Evolutionary Algorithms. EvoApplications (2) 2016: 27-41</a> (coautor)</li>
             </ul>
           </li>
           <li  style="margin-bottom:2.5%;"><strong>2015</strong>:
             <ul>
               <li><a href="http://arxiv.org/abs/1501.06857">Measuring the local GitHub developer
-                community. CoRR abs/1501.06857 (2015)</a></li>
+                community. CoRR abs/1501.06857 (2015)</a> (coautor)</li>
               <li><a href="http://arxiv.org/abs/1511.01088">There is no fast lunch: an examination of the running speed of
-                evolutionary algorithms in several languages. CoRR abs/1511.01088 (2015)</a>
+                evolutionary algorithms in several languages. CoRR abs/1511.01088 (2015)</a> (coautor)
             </ul>
           </li>
         </ul>
@@ -88,31 +136,21 @@
           </li>
         </ul>
 
-        <h2><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Más cosas sobre mí<h2>
-          <h3>Asociaciones de las que soy miembro</h3>
-          <a href="http://gdggranada.com/"><img src="images/gdggranada.png" width="300px"></a>
-          <p><small>Google Devevelopers Group Granada</small> es una asociación sin ánimo de lucro
-          de desarrolladores interesados en tecnología, sobre todo la que se encuentra estrechamente
-          relacionada con Google. Nos encargamos de organizar eventos para crear comunidad y difundir
-          conocimiento.</p>
-          <p>Soy miembro desde noviembre de 2015.</p>
+        <h2><i class="fa fa-trophy" aria-hidden="true"></i>Asociaciones de las que soy miembro</h2>
+        <a href="http://gdggranada.com/"><img style="float: right; margin-left:3%; margin-right:3%; width:300px;" src="images/gdggranada.png"></a>
+        <p>Google Devevelopers Group Granada es una asociación sin ánimo de lucro
+        de desarrolladores interesados en tecnología, sobre todo la que se encuentra estrechamente
+        relacionada con Google. Nos encargamos de organizar eventos para crear comunidad y difundir
+        conocimiento. Soy miembro desde noviembre de 2015.</p>
 
-          <a href="http://ieee-ugr.org/"><img src="images/ieee.png" width="150px"></a>
-          <p><smal>Institute of Electrical and Electronics Engineers (rama estudiantil de la Universidad de Granada)</small>.
-          Un grupo de gente realmente interesado en todo tipo de temas afines a la electrónica, rama de la
-          conocida asociación mundial.</p>
-          <p>En este año estamos organizando el CNR (Congreso Nacional de Ramas) 2017 (que será en Granada).</p>
-          <p>Miembro desde septiembre de 2015.</p>
+        <a href="http://ieee-ugr.org/"><img style="float: left; margin-left:3%; margin-right:3%;  width:110px;"  src="images/ieee.png"></a>
+        <p>Institute of Electrical and Electronics Engineers (en su rama estudiantil de la Universidad de Granada).
+        Un grupo de gente realmente interesado en todo tipo de temas afines a la electrónica, rama de la
+        conocida asociación mundial. Miembro desde septiembre de 2015. He participado con ellos en
+        jornadas tan interesantes como el IEExtreme, un hackathón a nivel mundial con
+        una duración de 24 horas para resolver problemas
+        lógico-matemáticos utilizando lenguajes de programación.</p>
 
-          <h3>Algunas aficciones</h3>
-          <ul>
-            <li>Programar (cómo no)</li>
-            <li>Internet de las Cosas</li>
-            <li>Cloud</li>
-            <li>Escuchar música</li>
-            <li>Salir con amigos</li>
-            <li>Jugar al futbolín</li>
-          </ul>
     </paper-material>
 
 
