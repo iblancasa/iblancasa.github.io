@@ -16,12 +16,11 @@
 <link rel="import" href="../../bower_components/paper-styles/color.html">
 <link rel="import" href="../../bower_components/paper-styles/typography.html">
 <link rel="import" href="../../bower_components/neon-animation/neon-animated-pages.html">
+<link rel="import" href="../../bower_components/neon-animation/neon-animations.html">
 
 <link rel="import" href="../../bower_components/paper-toast/paper-toast.html">
 <link rel="import" href="../../bower_components/carbon-route/carbon-route.html">
 <link rel="import" href="../../bower_components/carbon-route/carbon-location.html">
-
-
 
 <link rel="import" href="inicio.html">
 <link rel="import" href="sobre-mi.html">
@@ -117,6 +116,7 @@
     <iron-media-query query="min-width: 600px" query-matches="{{wideLayout}}"></iron-media-query>
 
    <neon-animated-pages
+                entryAnimation="slide-from-top-animation"
                 selected="[[data.page]]"
                 attr-for-selected="data-route"
                 fallback-selection="404">
@@ -124,8 +124,6 @@
       <sobre-mi data-route="about"></sobre-mi>
       <events-page data-route="events"></events-page>
     </neon-animated-pages>
-
-
 
   </template>
 
@@ -146,7 +144,6 @@
         ready: function() {
           // TODO: Remove this async https://github.com/PolymerElements/carbon-route/issues/44
           this.async(function() {
-
             if (!this.route.path) {
               this.set('route.path', '/home');
             }

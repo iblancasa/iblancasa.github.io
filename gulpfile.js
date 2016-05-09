@@ -17,6 +17,5 @@ gulp.task('default', ['clean'], function(cb) {
     ['copy', 'styles'],
     'html',
     'vulcanize',
-    'cache-config',
     cb);
 });
