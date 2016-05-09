@@ -1,7 +1,7 @@
 {
-  "name": "granadageek",
+  "name": "iblancasa",
   "version": "1.0.0",
-  "description": "Granada Geek website",
+  "description": "Israel Blancas website",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
     "gulp-eslint": "^2.0.0",
     "merge-stream": "^1.0.0",
     "run-sequence": "^1.1.5",
-    "browser-sync": "^2.11.2"
+    "browser-sync": "^2.11.2",
+    "glob-all": "^3.0.1"
   }
 }
