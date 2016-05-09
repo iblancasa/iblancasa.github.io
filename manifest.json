@@ -1,5 +1,5 @@
 {
-  "name": "Israel Blancas Álvarez",
+  "name": "Israel Blancas - iblancasa",
   "short_name": "iblancasa",
   "icons": [
     {
@@ -36,8 +36,8 @@
       "type": "image/png"
     }
   ],
-  "background_color": "#fff",
-  "display": "standalone",
+  "background_color": "#0277bd",
+  "display": "fullscreen",
   "theme_color": "#0277bd",
   "start_url": "/?homescreen=1"
 }
