@@ -32,3 +32,22 @@ gulp.task('html', function() {
       title: 'html'
     }));
 });
+
+// Optimization of element HTML code
+gulp.task('html-element', function() {
+  return gulp.src(['.temp/element/iblancasa-app.html'])
+    .pipe(useref({searchPath: ['.tmp', 'app']}))
+    .pipe(gulpIf('*.js', uglify({//Concatenate and minify JavaScript
+      preserveComments: 'none'
+    })))
+    .pipe(gulpIf('*.css', cleanCSS()))//Concatenate and minify CSS
+    .pipe(gulpIf('*.html', minifyHtml({//Minify HTML files
+      quotes: true,
+      empty: true,
+      spare: true
+    })))
+    .pipe(gulp.dest(dist()+"/elements/iblancasa-app"))
+    .pipe(size({
+      title: 'html'
+    }));
+});

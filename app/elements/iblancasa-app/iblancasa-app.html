@@ -22,6 +22,12 @@
 <link rel="import" href="../../bower_components/carbon-route/carbon-route.html">
 <link rel="import" href="../../bower_components/carbon-route/carbon-location.html">
 
+
+<link rel="import" href="../../bower_components/platinum-sw/platinum-sw-cache.html">
+<link rel="import" href="../../bower_components/platinum-sw/platinum-sw-register.html">
+
+
+
 <link rel="import" href="inicio.html">
 <link rel="import" href="sobre-mi.html">
 <link rel="import" href="events-page.html">
@@ -125,7 +131,25 @@
       <events-page data-route="events"></events-page>
     </neon-animated-pages>
 
+    <paper-toast id="cachingComplete"
+                 duration="6000"
+                 text="Caching complete! This app will work offline.">
+    </paper-toast>
+    <platinum-sw-register id="swr"
+                             auto-register
+                             clients-claim
+                             skip-waiting
+                             base-uri="../../bower_components/platinum-sw/bootstrap"
+                             on-service-worker-installed="display">
+         <platinum-sw-cache default-cache-strategy="fastest"
+         cache-config-file="../../cache-config.json">
+         </platinum-sw-cache>
+       </platinum-sw-register>
+
   </template>
+
+
+
 
   <script>
    window.addEventListener('WebComponentsReady', function() {
@@ -160,7 +184,13 @@
           if (wide && drawer.opened) {
             drawer.opened = false;
           }
+        },
+        display: function() {
+        // Check to make sure caching is actually enabled—it won't be in the dev environment.
+        if (!this.$.swRegister.disabled) {
+          this.$.cachingComplete.show();
         }
+      }
       });
     });
   </script>
