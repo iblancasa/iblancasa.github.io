@@ -20,3 +20,4 @@ list_format = 0
 
 +++
 
+These are some of my talks. You can find more in [my Speaker Deck profile] (https://speakerdeck.com/iblancasa).
