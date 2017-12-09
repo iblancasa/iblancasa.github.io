@@ -10,9 +10,10 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Contenderization technologies",
+    "Containerization technologies",
     "Design and development of cloud applications",
-    "Developer comminities"
+    "Developer communities",
+    "Programming languages"
   ]
 
 # List your qualifications (such as academic degrees).
