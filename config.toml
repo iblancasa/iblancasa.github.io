@@ -1,6 +1,6 @@
 baseurl = "/"  # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-title = "Academic"
-copyright = "&copy; 2017 Israel Blancas"
+title = "iblancasa"
+copyright = "&copy; 2017 Israel Blancas - iblancasa"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -15,7 +15,7 @@ disqusShortname = ""
 googleAnalytics = ""
 
 # Default language to use (if you setup multilingual support)
-defaultContentLanguage = "es"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
 [outputs]
@@ -51,6 +51,9 @@ defaultContentLanguageInSubdir = false
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "iblancasa@gmail.com"
+  telegram = "iblancasa"
+  address = "Granada (Spain)"
+
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
   keybase = ""
@@ -132,7 +135,7 @@ defaultContentLanguageInSubdir = false
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
   highlight_languages = []
-  # highlight_style = "github"
+  highlight_style = "github"
 
   # Enable native social sharing buttons?
   sharing = true
@@ -161,7 +164,7 @@ defaultContentLanguageInSubdir = false
   # Configuration of talk pages.
   [params.talks]
     # Show talk time?
-    time = true
+    time = false
 
   # Configuration of publication pages.
   [params.publications]
@@ -219,6 +222,10 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//github.com/iblancasa"
 
+  [[params.social]]
+    icon = "telegram"
+    icon_pack = "fa"
+    link = "https://telegram.me/iblancasa"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
@@ -230,27 +237,33 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Home"
-  url = "#home"
+  url = "#about"
   weight = 1
 
+
 [[menu.main]]
-  name = "Proyectos"
-  url = "#proyectos"
+  name = "Projects"
+  url = "#projects"
   weight = 2
 
 [[menu.main]]
-  name = "Publicaciones"
-  url = "#publicaciones"
+  name = "Talks"
+  url = "#talks"
   weight = 3
 
 [[menu.main]]
-  name = "Contacto"
-  url = "#contacto"
+  name = "Publications"
+  url = "#publications"
   weight = 4
+
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 5
 
 # Taxonomies.
 [taxonomies]
-  tag = "tags"
   category = "categories"
   publication_type = "publication_types"
 
