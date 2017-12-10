@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on iblancasa</title>
+    <link>/publication/</link>
+    <description>Recent content in Publications on iblancasa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Israel Blancas - iblancasa</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ranking Programming Languages for Evolutionary Algorithm Operations</title>
+      <link>/publication/ranking-programming/</link>
+      <pubDate>Tue, 17 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ranking-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>There is no fast lunch: an examination of the running speed of evolutionary algorithms in several languages</title>
+      <link>/publication/there-is-no-fast/</link>
+      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/there-is-no-fast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A comparison of implementations of basic evolutionary algorithm operations in different languages</title>
+      <link>/publication/comparison-of-implementations/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/comparison-of-implementations/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NodIO: Marco de desarrollo de aplicaciones para computación evolutiva voluntaria</title>
+      <link>/publication/nodio/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/nodio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Benchmarking Languages for Evolutionary Algorithms</title>
+      <link>/publication/benchmarking-languages/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/benchmarking-languages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ranking the Performance of Compiled and Interpreted Languages in Genetic Algorithms</title>
+      <link>/publication/ranking-the-performance/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ranking-the-performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring the local GitHub developer community</title>
+      <link>/publication/measuring-the-local/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/measuring-the-local/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

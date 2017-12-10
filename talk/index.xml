@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks on iblancasa</title>
+    <link>/talk/</link>
+    <description>Recent content in Recent &amp; Upcoming Talks on iblancasa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Israel Blancas - iblancasa</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Docker: no todo es cloud</title>
+      <link>/talk/docker-no-todo-es-cloud/</link>
+      <pubDate>Wed, 26 Jul 2017 12:00:00 +0200</pubDate>
+      
+      <guid>/talk/docker-no-todo-es-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Progressive Web Apps: nativo no significa mejor</title>
+      <link>/talk/pwas-nativo-no-mejor/</link>
+      <pubDate>Fri, 25 Nov 2016 13:00:00 +0100</pubDate>
+      
+      <guid>/talk/pwas-nativo-no-mejor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHubCity: una biblioteca para conocer tu comunidad</title>
+      <link>/talk/githubcity-ciudad-comunidad/</link>
+      <pubDate>Sun, 09 Oct 2016 15:00:00 +0200</pubDate>
+      
+      <guid>/talk/githubcity-ciudad-comunidad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Polymer Polytechnic</title>
+      <link>/talk/polytechnic/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/polytechnic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
