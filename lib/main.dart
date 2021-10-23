@@ -5,14 +5,17 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
 import 'package:flip_card/flip_card.dart';
 
+// Starts the APP
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: "Israel Blancas - iblancasa",
       home: HomePage(),
       debugShowCheckedModeBanner: false,
@@ -21,12 +24,14 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: Text('Israel Blancas - iblancasa'),
+          title: const Text('Israel Blancas - iblancasa'),
         ),
         body: ListView(
           children: <Widget>[
@@ -37,17 +42,17 @@ class HomePage extends StatelessWidget {
 
   Widget getCard(BuildContext context) {
     return FlipCard(
-      fill: Fill
-          .fillBack, // Fill the back side of the card to make in the same size as the front.
-      direction: FlipDirection.HORIZONTAL, // default
-      front: miCardImage(context),
-      back: miCardImage(context),
+      fill: Fill.fillBack,
+      direction: FlipDirection.HORIZONTAL,
+      front: myCard(context),
+      back: myCard(context),
     );
   }
 
-  Card miCardImage(BuildContext context) {
+  Card myCard(BuildContext context) {
     Flex myWidget;
 
+    // Create a Row or a Column depending on the device width
     var width = MediaQuery.of(context).size.width;
     if (width > 450) {
       myWidget = Row(
@@ -67,18 +72,18 @@ class HomePage extends StatelessWidget {
       elevation: 10,
       child: Column(
         children: <Widget>[
-          FadeIn(
+          const FadeIn(
               curve: Curves.easeIn,
-              duration: const Duration(milliseconds: 4000),
-              child: const Padding(
+              duration: Duration(milliseconds: 4000),
+              child: Padding(
                   padding: EdgeInsets.all(20),
                   child: Image(
                     image: AssetImage("assets/header.jpg"),
                   ))),
-          FadeIn(
+          const FadeIn(
               curve: Curves.easeIn,
-              duration: const Duration(milliseconds: 11000),
-              child: const Padding(
+              duration: Duration(milliseconds: 11000),
+              child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 10, 0, 5),
                 child: Text("Hi, my name is Israel!",
                     style: TextStyle(fontSize: 30)),
